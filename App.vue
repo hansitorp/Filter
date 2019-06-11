@@ -3,11 +3,12 @@
 </template>
 
 <script>
-
-  import App from './src'
+  import { Font } from 'expo';
+  import { Ionicons } from '@expo/vector-icons';
+  
+  import App from './components'
   export default {
     components: {
-      HomeScreen, AppNavigation
       App
     }
   }

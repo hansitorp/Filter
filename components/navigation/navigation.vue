@@ -33,9 +33,13 @@ const TabNavigation = createBottomTabNavigator({
     Edit: EditStack
 })
 
-const AppNavigation = createAppContainer(abNavigation)
+const AppNavigation = createAppContainer(TabNavigation)
 
 export default {
+    components: {
+        AppNavigation,
+        Root
+    }
     
 }
 </script>
