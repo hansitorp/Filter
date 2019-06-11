@@ -1,17 +1,14 @@
 <template>
-  <view class="container">
-    <text class="text-color-primary">My Vue Native App</text>
-    </view>
+  <App/>
 </template>
- 
-<style>
-.container {
-  background-color: blue;
-  align-items: center;
-  justify-content: center;
-  flex: 1;
-}
-.text-color-primary {
-  color: blue;
-}
-</style>
+
+<script>
+
+  import App from './src'
+  export default {
+    components: {
+      HomeScreen, AppNavigation
+      App
+    }
+  }
+</script>
