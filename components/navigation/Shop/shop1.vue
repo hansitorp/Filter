@@ -1,40 +1,23 @@
 <template>
-  <nb-container>
-    <nb-header>
-      <nb-left>
-        <nb-button :on-press = "toggleDrawer" transparent>
-          <nb-icon name="menu"/>
-        </nb-button>
-      </nb-left>
-      <nb-body>
-        <nb-title>SHOP</nb-title>
-      </nb-body>
-      <nb-right></nb-right>
-    </nb-header>
+  <ScreenWithDrawer :navigation = "navigation"
+                    :headerTitle = "title">
     <view>
       <text class="color">{{title}}</text>
     </view>
-  </nb-container>
+  </ScreenWithDrawer>
 </template>
 
 <script>
-import { DrawerActions } from  "react-navigation-drawer"
-
 export default {
   props: {
-    navigation: {
-        type: Object
-    }
+      navigation: {
+          type: Object
+      }
   },
   data() {
     return {
-      title: "I AM SHOP1"
+      title: "Shop"
     };
-  },
-  methods: {
-      toggleDrawer () {
-          this.navigation.dispatch(DrawerActions.toggleDrawer())
-      }
   }
 };
 </script>

@@ -7,7 +7,9 @@
   import Navigation from './navigation/navigation'
   import Vue from "vue-native-core";
   import { VueNativeBase } from "native-base";
+  import ScreenWithDrawer from "./comps/ScreenWithDrawer";
   Vue.use(VueNativeBase);
+  Vue.component("ScreenWithDrawer", ScreenWithDrawer)
 
 
   export default {
