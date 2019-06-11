@@ -6,7 +6,7 @@
  
 <style>
 .container {
-  background-color: white;
+  background-color: blue;
   align-items: center;
   justify-content: center;
   flex: 1;
