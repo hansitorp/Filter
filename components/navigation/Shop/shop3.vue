@@ -20,3 +20,9 @@ export default {
   }
 };
 </script>
+
+<style>
+.Test{
+  color: rgb(138, 109, 114)
+}
+</style>

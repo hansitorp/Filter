@@ -1,7 +1,7 @@
 <template>
   <ScreenWithDrawer :navigation = "navigation"
                     :headerTitle = "title">
-    <view>
+    <view class="container">
       <text class="color">{{title}}</text>
     </view>
   </ScreenWithDrawer>
@@ -16,8 +16,15 @@ export default {
   },
   data() {
     return {
-      title: "Shop"
+      title: "Explore"
     };
   }
 };
 </script>
+
+<style>
+.container {
+  flex: 1;
+  background-color: #BBA7A1;
+}
+</style>
