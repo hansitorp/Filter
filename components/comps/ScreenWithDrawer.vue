@@ -9,7 +9,11 @@
       <nb-body>
         <nb-title>{{headerTitle}}</nb-title>
       </nb-body>
-      <nb-right></nb-right>
+      <nb-right>
+        <nb-button transparent>
+          <nb-icon name="search"/>
+        </nb-button>
+      </nb-right>
     </nb-header>
     <slot/>
   </nb-container>
