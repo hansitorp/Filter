@@ -16,6 +16,7 @@ import people from "./Shop/people";
 import color from "./Shop/color";
 import date from "./Shop/date";
 import myFilter from "./Shop/myFilter";
+import Explore from "./Shop/explore";
 
 //Profile
 import Profile1 from "./Profile/profile1";
@@ -38,7 +39,7 @@ import {
 
 const ShopStack = createStackNavigator(
   {
-    Shop: Shop1,
+    Explore: Explore,
     Shoptwo: Shop2
   },
   {

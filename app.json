@@ -2,7 +2,7 @@
   "expo": {
     "name": "Filter",
     "slug": "Filter",
-    "privacy": "public",
+    "privacy": "unlisted",
     "sdkVersion": "33.0.0",
     "platforms": [
       "ios",

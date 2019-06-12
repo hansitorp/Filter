@@ -10,7 +10,7 @@
         <nb-title class="title">{{headerTitle}}</nb-title>
       </nb-body>
       <nb-right>
-        <nb-button transparent>
+        <nb-button :on-press="this.props.onPress" transparent>
           <nb-icon name="search" class="icon"/>
         </nb-button>
       </nb-right>
@@ -26,6 +26,9 @@ export default {
   props: {
     navigation: {
       type: Object
+    },
+    onPressAction: {
+      Type: Object
     },
     headerTitle: {
       type: String,
