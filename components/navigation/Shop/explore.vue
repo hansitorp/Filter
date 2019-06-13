@@ -66,7 +66,8 @@ export default {
   },
   methods: {
             onPressCard: function() {
-                alert('Clicked Image')
+                // alert('Clicked Image')
+                this.navigation.navigate("Shoptwo");
             },
             ShowHideSearch: function() {
                 if(this.searchShowing){
@@ -109,7 +110,8 @@ export default {
     margin-left: 5;
 }
 .searchBoxStyle {
-  background-color: rgb(223, 223, 223);
+  /* background-color: rgb(223, 223, 223); */
+  background-color: #E3D8D4;
 }
 .iconSearchBoxStyle{
   margin-left: 15;

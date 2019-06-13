@@ -2,8 +2,8 @@
   <nb-container>
     <nb-header :style="{ backgroundColor: '#E3D8D4' }">
       <nb-left>
-        <nb-button :on-press="toggleDrawer" transparent>
-          <nb-icon name="menu" class="icon"/>
+        <nb-button :on-press="goBack" transparent>
+          <MaterialCommunityIcons name="arrow-left" class="icon" :size=30 />
         </nb-button>
       </nb-left>
       <nb-body>
@@ -11,7 +11,7 @@
       </nb-body>
       <nb-right>
         <nb-button :on-press="this.props.onPress" transparent>
-          <nb-icon name="search" class="icon"/>
+          <MaterialCommunityIcons name="cart" class="icon" :size=30 />
         </nb-button>
       </nb-right>
     </nb-header>
@@ -36,8 +36,8 @@ export default {
     },
   },
   methods: {
-    toggleDrawer() {
-      this.navigation.dispatch(DrawerActions.toggleDrawer());
+    goBack() {
+      this.navigation.goBack()
     }
   }
 };
