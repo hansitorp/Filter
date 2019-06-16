@@ -1,16 +1,27 @@
 <template>
-    <view>
-        <text class="color"> {{title}}</text>
-    </view>
+  <view class="editPhoto">
+    <button title="Pick an image from camera roll" onPress="{this._pickImage}"/>
+    <image :style="{width: 500, height: 500}" :source="{image}">
+  </view>
 </template>
+
 
 <script>
 export default {
-    data(){
-        return{
-            title: "I AM EDIT1"
-        }
-    }
-}
+
+    
+  
+};
 </script>
+
+<style>
+.editPhoto {
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+}
+</style>
+
+
+
 
