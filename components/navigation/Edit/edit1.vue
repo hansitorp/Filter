@@ -13,7 +13,7 @@
 import React from "react";
 import * as ImagePicker from "expo-image-picker";
 import * as Permissions from "expo-permissions";
-// TODO :
+// TODO : make chosen photo display.
 export default {
   methods: {
     pickImage: async function() {
