@@ -40,7 +40,7 @@ import {
 const ShopStack = createStackNavigator(
   {
     Explore: Explore,
-    Shoptwo: Shop2
+    Shoptwo: Shop2,
   },
   {
     headerMode: "none",
@@ -69,7 +69,13 @@ const ProfileStack = createStackNavigator({
 
 const EditStack = createStackNavigator({
   Edit: Edit1
-});
+},
+{
+    headerMode: "none",
+    navigationOptions: {
+      headerVisible: false
+    }
+  });
 
 const AuthStack = createStackNavigator({
   Login: Login,
@@ -195,7 +201,7 @@ const TabNavigation = createBottomTabNavigator({
   
 },
 {
-  
+  initialRouteName: "Edit", //Hvem tab som skal vises først
   tabBarOptions: {
     activeTintColor: '#ffffff',
     inactiveTintColor: '#AE8D92',

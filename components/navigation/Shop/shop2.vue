@@ -36,7 +36,7 @@
         </view>
     
     <touchable-opacity :on-press="SeeFilter" class="btn" :style="{ shadowColor: '#000', shadowOffset: { width: 0, height: 2 }, shadowOpacity: 0.8, shadowRadius: 2, elevation: 1, }" >
-        <text :style="{ color: '#AE8D92', fontSize: '20', textAlign: 'center' }">See all filters</text>
+        <text :style="{ color: '#AE8D92', fontSize: 20, textAlign: 'center' }">See all filters</text>
     </touchable-opacity>
 
     </view>
