@@ -7,20 +7,35 @@
 
 
 <script>
+import { Camera, Permissions } from "expo";
+import { Image } from 'react-native';
 // TODO : make this async??
 export default {
-    methods: {
-        pickImage: function () {
-            const permission = await Permissions.getAsync(Permissions.CAMERA_ROLL);
-            if (permission.status !== 'granted') {
 
-                const newPermission = await Permissions.askAsync(Permissions.CAMERA_ROLL);
-                if (newPermission.status === 'granted') {
-                 //its granted.
-                    }
-            }
+    props: {
+        navigation: {
+            type: Object
+        },
+    },
+    components: { 
+        Camera,
+        Image,
+    },
+    data: function() {
+        return {
+            hasImagesPermission: false,
+            picture: '',
+            loading: false,
         }
-    }
+    },
+    mounted: function() {
+        Permissions.askAsync(Permissions.CAMERA_ROLL)
+        .then(status => {
+            hasCameraPermission = status.status == "granted" ? true : false;
+        }).catch((err)=>{
+            console.log(err);
+        });
+    },
 
 
   
